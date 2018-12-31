@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Andrei Miclaus
+# This file is distributed under the same license as the ScaleIT Platform Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ScaleIT Platform Documentation 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 18:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/source/security.rst:2
+msgid "Sicherheit (Security) auf der ScaleIT Plattform"
+msgstr ""
+
+#: ../docs/source/security.rst:5
+msgid "Für Entwickler"
+msgstr ""
+
+#: ../docs/source/security.rst:13
+msgid "Gegen wen und gegen welche Angriffe schützen wir unsere ScaleIT Instanz?"
+msgstr ""
+
+#: ../docs/source/security.rst:8
+msgid "Externe Angreifer:"
+msgstr ""
+
+#: ../docs/source/security.rst:9
+msgid "Im Falle einer horizontalen Vernetzung oder Erreichbarkeit der Infrastruktur aus dem Internet oder durch ungesicherte WLAN Access-Points."
+msgstr ""
+
+#: ../docs/source/security.rst:10
+msgid "Interne Angreifer:"
+msgstr ""
+
+#: ../docs/source/security.rst:11
+msgid "Interne Angreifer sind immer ein hohes Risiko. ScaleIT bietet durch den App-Aufbau aber Mechanismen, die den Zugriff limitieren, wie z.B. separate Netzwerke für sensible Komponenten innerhalb eine App oder Rollenbasierte API-Zugriffskontrolle."
+msgstr ""
+
+#: ../docs/source/security.rst:13
+msgid "Schlechte Software:"
+msgstr ""
+
+#: ../docs/source/security.rst:13
+msgid "Eine Software kann wissentlich oder unwissentlich Schaden verursachen. Ein Beispiel dafür ist die Ressourcennutzung (PIDs, CPU etc.) oder der Zugriff auf das root Filesystem. Einstellungen die die Angriffsfläche mindern sind in dem ScaleIT SDK eingebaut. Es wird den Entwicklern empfohlen die Standardwerte zu nutzen. Der Review-Prozess im offiziellen ScaleIT-App-Store verifiziert (automatisch) jede neue App, um solche Szenarien zu vermeiden."
+msgstr ""
+
+#: ../docs/source/security.rst:16
+msgid "Welche innerhalb und außerhalb von Docker liegenden sicherheitsrisiken gibt es und was tun wir dagegen?"
+msgstr ""
+
+#: ../docs/source/security.rst:17
+#: ../docs/source/security.rst:26
+#: ../docs/source/security.rst:29
+#: ../docs/source/security.rst:33
+msgid "Beantworten"
+msgstr ""
+
+#: ../docs/source/security.rst:21
+msgid "Wenn das \"ScaleIT System\" nicht auf Kommandozeilenebene zugänglich ist, fallen damit wesentliche risiken weg?"
+msgstr ""
+
+#: ../docs/source/security.rst:21
+msgid "Nein, solange Container im privilegiertem Modus, mit dem Docker Socket arbeiten oder auf das root Filesystem Zugriff haben, kann man das nicht pauschal sagen."
+msgstr ""
+
+#: ../docs/source/security.rst:28
+msgid "Wie organisieren wir das ssl-zertifikat management?"
+msgstr ""
+
+#: ../docs/source/security.rst:26
+msgid "Brauchen wir eine eigene certificate authority, um an die apps zertifikate auszustellen bzw. diese zu überprüfen?"
+msgstr ""
+
+#: ../docs/source/security.rst:28
+msgid "Wie gehen wir mit ablaufenden zertifikaten um?"
+msgstr ""
+
+#: ../docs/source/security.rst:32
+msgid "Welchen Bezug gibt es zu den standards, die auf dem hallenboden und im betrieblichen umfeld gelten (bsi, ...)?"
+msgstr ""
+

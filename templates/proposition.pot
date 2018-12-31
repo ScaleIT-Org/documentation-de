@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Andrei Miclaus
+# This file is distributed under the same license as the ScaleIT Platform Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ScaleIT Platform Documentation 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 18:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/source/proposition.rst:3
+msgid "Value Proposition"
+msgstr ""
+
+#: ../docs/source/proposition.rst:17
+msgid "Schnell installierbar"
+msgstr ""
+
+#: ../docs/source/proposition.rst:18
+msgid "Integration in Firmen-IT"
+msgstr ""
+
+#: ../docs/source/proposition.rst:19
+msgid "Semantische Daten"
+msgstr ""
+
+#: ../docs/source/proposition.rst:20
+msgid "Hohe Integrierbarkeit durch Web-Technologien"
+msgstr ""
+
+#: ../docs/source/proposition.rst:21
+msgid "Kein Internet notwendig"
+msgstr ""
+
+#: ../docs/source/proposition.rst:24
+msgid "Digitalisierung durch Apps"
+msgstr ""
+
+#: ../docs/source/proposition.rst:30
+msgid "Apps bieten Nutzern einen hohen Wert durch die Einfachheit der Installation und Bedienung, sowie der optimierten nutzefreundlichkeit (UX)."
+msgstr ""
+
+#: ../docs/source/proposition.rst:37
+msgid "Zusätzlich zu der Bedienungsfreundlichkeit von Smartphone-Apps, bieten die Industriellen Apps von ScaleIT weitere Vorteile und können im betrieblichen Kontext eingesetzt werden."
+msgstr ""
+
+#: ../docs/source/proposition.rst:40
+msgid ":ref:`ScaleIT success stories hier! <success stories>`"
+msgstr ""
+
+#: ../docs/source/proposition.rst:41
+msgid "Sehen sie wie ScaleIT unseren Partneunternehmen geholfen hat."
+msgstr ""
+
+#: ../docs/source/proposition.rst:44
+msgid "ScaleIT Digitalisierungsstrategie"
+msgstr ""
+
+#: ../docs/source/proposition.rst:55
+msgid "Digitalisierungschritte durch ScaleIT: von der Strategie hin zu den konkreten Maßnahmen."
+msgstr ""
+
+#: ../docs/source/proposition.rst:59
+msgid "Anforderungsanalyse"
+msgstr ""
+
+#: ../docs/source/proposition.rst:61
+msgid "If you wish to analyse your requirements regarding Apps, visit our ScaleIT App Workshop Kit: https://github.com/ScaleIT-Org/workshop-app-prototyping"
+msgstr ""
+
+#: ../docs/source/proposition.rst:65
+msgid "Prozesse"
+msgstr ""
+
+#: ../docs/source/proposition.rst:67
+msgid "Die Verbesserung von Prozessen auf dem betrieblichen Hallenboden ist eines der Hauptziele von ScaleIT. Unser Ansatz heißt `Die richtige Software für den richtigen Job einsetzen`."
+msgstr ""
+
+#: ../docs/source/proposition.rst:72
+msgid "Software auf dem Hallenboden risikolos ausprobieren"
+msgstr ""
+
+#: ../docs/source/proposition.rst:78
+msgid "In ScaleIT ist der Lebenszyklus eines Stückes Software (der App) vereinfacht."
+msgstr ""
+
+#: ../docs/source/proposition.rst:80
+msgid "Durch das Vereinen von Development und Operations (Entwicklung und Inbetriebnahme) wird es Experten ermöglicht Software leicht auf den Hallenboden einzusetzen oder zurückzurollen. Da Apps Seiten-Effekt frei sind, können nach dem Baukastenprinzip Apps entfernt werden."
+msgstr ""
+
+#: ../docs/source/proposition.rst:84
+msgid "A/B Testing"
+msgstr ""
+
+#: ../docs/source/proposition.rst:86
+msgid "Durch die Vereinfachung der Installation von Software durch ScaleIT, wird es mittelständischen Betrieben ermöglicht unterschiedliche Apps auszuprobieren und dann die geeignetste App zu behalten."
+msgstr ""
+
+#: ../docs/source/proposition.rst:88
+msgid "Sucht ein Unternehmen beispielhaft ein Projektmanagementwerkzeug, dann kann es die Redmine-App, die Gitlab-App oder eine andere App aus dem Katalog installieren und diese parallele betreiben und ausprobieren."
+msgstr ""
+
+#: ../docs/source/proposition.rst:90
+msgid "Die Entscheidung wird so durch reelen Einsatz der Software im betrieblichen Alltag unterstützt."
+msgstr ""
+
+#: ../docs/source/proposition.rst:97
+msgid "A-B Test Beispiel [#f1]_"
+msgstr ""
+
+#: ../docs/source/proposition.rst:103
+msgid "A-B Test Beispiel [#f2]_"
+msgstr ""
+
+#: ../docs/source/proposition.rst:106
+msgid "Footnotes"
+msgstr ""
+
+#: ../docs/source/proposition.rst:107
+msgid "https://commons.wikimedia.org/wiki/File:A-B_testing_example.png"
+msgstr ""
+
+#: ../docs/source/proposition.rst:108
+msgid "https://commons.wikimedia.org/wiki/File:Ab-test.jpg"
+msgstr ""
+

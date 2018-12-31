@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Andrei Miclaus
+# This file is distributed under the same license as the ScaleIT Platform Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ScaleIT Platform Documentation 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 18:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/source/whatis.rst:3
+msgid "What is ScaleIT?"
+msgstr ""
+
+#: ../docs/source/whatis.rst:5
+msgid "ScaleIT is a solution to bring advanced IT technologies to manufacturing companies. We bring the necessary **software and hardware infrastructure** to the manufacturing shop floor of small and medium companies and help people work better by introducing **modern Industrial Grade Apps**."
+msgstr ""
+
+#: ../docs/source/whatis.rst:7
+msgid "It is a work in progress created within the ScaleIT Project funded by the BMBF (Fkz.: 02P14B180ff)."
+msgstr ""
+
+#: ../docs/source/whatis.rst:10
+msgid "ScaleIT Value Proposition"
+msgstr ""
+
+#: ../docs/source/whatis.rst:11
+msgid ":ref:`Ich möchte jetzt erfahren wie mir ScaleIT auf dem Hallenboden hilft! <value proposition>`"
+msgstr ""
+
+#: ../docs/source/whatis.rst:13
+msgid "There are three main components to the ScaleIT solution the ScaleIT Software Platform, ScaleIT Hardware and the ScaleIT Community, as seen in the figure below."
+msgstr ""
+
+#: ../docs/source/whatis.rst:24
+msgid "ScaleIT Software Platform"
+msgstr ""
+
+#: ../docs/source/whatis.rst:22
+msgid "In IT, a platform is any hardware or software used to host an application or service. An application platform, for example, consists of hardware, an operating system and coordinating programs that use the instruction set for a particular processor or microprocessor [#f1]_."
+msgstr ""
+
+#: ../docs/source/whatis.rst:24
+msgid "Have a deeper look at the software architecture :ref:`here <ScaleIT Architektur>`."
+msgstr ""
+
+#: ../docs/source/whatis.rst:27
+msgid "ScaleIT Hardware"
+msgstr ""
+
+#: ../docs/source/whatis.rst:27
+msgid "WIP, coming soon"
+msgstr ""
+
+#: ../docs/source/whatis.rst:30
+msgid "ScaleIT Partner and the ScaleIT Community"
+msgstr ""
+
+#: ../docs/source/whatis.rst:30
+msgid "`Meet the people of ScaleIT <https://medium.com/@scale_it_org/the-people-of-scaleit-382866ff4226>`_"
+msgstr ""
+
+#: ../docs/source/whatis.rst:37
+msgid "Das ScaleIT Konsortium"
+msgstr ""
+
+#: ../docs/source/whatis.rst:47
+msgid "ScaleIT is Open Source"
+msgstr ""
+
+#: ../docs/source/whatis.rst:41
+msgid "When a project is open source, it means anybody can view, use, modify, and distribute your project for any purpose. These permissions are enforced through an open source license."
+msgstr ""
+
+#: ../docs/source/whatis.rst:43
+msgid "Learn why this is important `OSS for German Manufacturing <https://medium.com/@scale_it_org/a-push-towards-bringing-open-source-mentality-to-german-manufacturing-e29d5af84875>`_"
+msgstr ""
+
+#: ../docs/source/whatis.rst:45
+msgid "ScaleIT is being published with an MIT license and are provided as is."
+msgstr ""
+
+#: ../docs/source/whatis.rst:47
+msgid "**If you need professional solutions**, our partners are building industry grade ScaleIT Systems and are happy to help. Mail us at info@scale-it.org or e-mail a partner directly."
+msgstr ""
+
+#: ../docs/source/whatis.rst:54
+msgid "Pillars of open source projects."
+msgstr ""
+
+#: ../docs/source/whatis.rst:57
+msgid "Better image with ScaleIT Eco System, ScaleIT Software Platform, ScaleIT Hardware"
+msgstr ""
+
+#: ../docs/source/whatis.rst:62
+msgid "Footnotes"
+msgstr ""
+
+#: ../docs/source/whatis.rst:63
+msgid "https://searchservervirtualization.techtarget.com/definition/platform"
+msgstr ""
+
+#: ../docs/source/whatis.rst:64
+msgid "https://commons.wikimedia.org/wiki/File:Ab-test.jpg"
+msgstr ""
+

@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Andrei Miclaus
+# This file is distributed under the same license as the ScaleIT Platform Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ScaleIT Platform Documentation 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 18:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/source/getstarted.rst:2
+msgid "Get Started"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:5
+msgid "Technical Getting Started"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:7
+msgid "|github| `Click here for the technical getting started (GitHub) <https://github.com/ScaleIT-Org/documentation>`_"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:9
+msgid "|architecture| :ref:`Click here for the architecture documentation and white paper <ScaleIT Architektur>`"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:18
+msgid "Understanding the Shop Floor"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:20
+msgid "IoT Aspects of the Shop Floor"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:23
+msgid "Wo befinden wir uns wenn wir vom betrieblichen Hallenboden reden?"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:26
+msgid "Production ready IoT systems require a sophisticated and robust infrastructure. There are a multitude of services and open source technologies that allow the realisation of such systems with minimal effort. In practice however, and especially in the manufacturing domain, it proves difficult to bring these technologies into production and as a result the shop floor cannot benefit from the advantages of the IoT. Working in close cooperation with small and medium sized manufacturers, we have identified several key issues they face when dropping the monolithic approach and adopting IoT technologies and an IoT mindset:"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:32
+msgid "The manufacturing shop floor where people, machine and sensors interact not just physically but also virtually through software."
+msgstr ""
+
+#: ../docs/source/getstarted.rst:34
+msgid "The shop floor systems are isolated from the Internet."
+msgstr ""
+
+#: ../docs/source/getstarted.rst:35
+msgid "System landscapes are dominated by unconnected silos or monoliths (Enterprise Service Bus, ERP Systems, large central data warehouses). These are difficult to evolve and do not fit with the distributed nature of the shop floor."
+msgstr ""
+
+#: ../docs/source/getstarted.rst:36
+msgid "Technology choices are limited to only a handful of in-house-approved stacks due to restricting corporate IT policies (e.g. Windows only world)."
+msgstr ""
+
+#: ../docs/source/getstarted.rst:37
+msgid "It is hard to iterate through software versions due to difficult development and deployment and divergent infrastructure."
+msgstr ""
+
+#: ../docs/source/getstarted.rst:38
+msgid "Slow, low risk approach to potential game changer technologies due to a (justified) high risk aversion regarding the control software for the production lines."
+msgstr ""
+
+#: ../docs/source/getstarted.rst:39
+msgid "Difficult testing and simulation using realistic or real data as it is either non existent or not easily reusable."
+msgstr ""
+
+#: ../docs/source/getstarted.rst:40
+msgid "It is generally hard to create a distributed interconnected environment having only a limited workforce consisting of small IT teams and no dedicated ecosystem software engineers."
+msgstr ""
+
+#: ../docs/source/getstarted.rst:42
+msgid "By incorporating key software engineering concepts (versioning, containerisation, continuous integration, continuous deployment, App runtime environment) the proposed architecture aims at giving manufacturers a ready to use infrastructure with the ingredients for a healthy and flexible software eco-system on the shop floor. We believe that the design principles listed below are central to a shop floor architecture that supports IIoT applications:"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:45
+msgid "Support silo centerd architecture"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:46
+msgid "Resilience first design"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:47
+msgid "Rapid deployment"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:50
+msgid "ScaleIT System Landscape"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:52
+msgid "Using ScaleIT, you imbue the IT landscape on your manufacturing shop floor with the best practices from modern software development and can harness benefits such as faster innovation cycles, lower risk and increased productivity by using better tools."
+msgstr ""
+
+#: ../docs/source/getstarted.rst:59
+msgid "The Web of manufacturing overview"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:62
+msgid "**References**"
+msgstr ""
+
+#: ../docs/source/getstarted.rst:65
+msgid "`Some icons provided by oNline Web Fonts <http://www.onlinewebfonts.com>`_"
+msgstr ""
+

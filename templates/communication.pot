@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Andrei Miclaus
+# This file is distributed under the same license as the ScaleIT Platform Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ScaleIT Platform Documentation 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 18:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/source/communication.rst:2
+msgid "Kommunikation auf der ScaleIT Plattform"
+msgstr ""
+
+#: ../docs/source/communication.rst:4
+msgid "Die Kommunikation auf der ScaleIT Plattform"
+msgstr ""
+
+#: ../docs/source/communication.rst:6
+msgid "Es wird unterschieden zwischen"
+msgstr ""
+
+#: ../docs/source/communication.rst:8
+msgid "Meldungen die an eine einzige Entität gehen"
+msgstr ""
+
+#: ../docs/source/communication.rst:12
+msgid "an eine einzige Instanz oder"
+msgstr ""
+
+#: ../docs/source/communication.rst:15
+msgid "Kommunikation zwischen Apps (App-2-App)"
+msgstr ""
+
+#: ../docs/source/communication.rst:18
+msgid "1:1 Kommunikation (Peer2Peer,Resourcenanfragen)"
+msgstr ""
+
+#: ../docs/source/communication.rst:21
+msgid "1:n Kommunikation 9"
+msgstr ""
+
+#: ../docs/source/communication.rst:25
+msgid "Kommunikation zwischen Apps und der Plattform (App-2-Platform)"
+msgstr ""
+
+#: ../docs/source/communication.rst:27
+msgid "Die Kommunikation zwischen Apps und der Plattform (App-2-Platform) wird über den Sidecar-Mechanismus realisiert. Entwickler binden die Platform-Sidecars ein und nutzen die standardisierten HTTP APIs, um darauf zuzugreifen. Dabei ist zu beachten, dass die Sidecars im internen Netzwerk der App mit ihren docker-compose Service Namen angesprochen werden können."
+msgstr ""
+
+#: ../docs/source/communication.rst:29
+msgid "Requests die durch das Routing Sidecar an die App gegeben werden enthalten je nach ausbaustufe der Plattform Informationen zu Identität, Authorisierung, Lizenz etc. - z.B. als HTTP Header. Dadurch, dass der Entwickler dem Sidecar vertraut können diese in der App genutzt werden ohne die zentralen Instanzen anzusprechen. Dadurch wird die Abhängigkeit zu einer bestimmten Plattforminstanz reduziert."
+msgstr ""
+
+#: ../docs/source/communication.rst:31
+msgid "Die Sidecars melden den zentralen Plattformkomponenten (Platform-Essentials?) und Business Essentials wenn es Änderungen gibt. Z.B. HTTP API."
+msgstr ""
+
+#: ../docs/source/communication.rst:33
+msgid "Weil sich hinter diesen zentralisierten Komponenten meist ein Cluster von Anwendungen verbirgt, ... Master-Komponenten und Slave Komponenten..."
+msgstr ""
+
+#: ../docs/source/communication.rst:36
+msgid "Kommunikation mit der App Registry"
+msgstr ""
+
+#: ../docs/source/communication.rst:39
+msgid "Kommunikation mit dem Identity-Manager"
+msgstr ""
+
+#: ../docs/source/communication.rst:42
+msgid "Kommunikation mit dem License-Manager"
+msgstr ""
+

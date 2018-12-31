@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Andrei Miclaus
+# This file is distributed under the same license as the ScaleIT Platform Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ScaleIT Platform Documentation 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 18:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/source/success_stories.rst:3
+msgid "ScaleIT Success Stories"
+msgstr ""
+
+#: ../docs/source/success_stories.rst:6
+msgid "Publish success stories."
+msgstr ""
+
+#: ../docs/source/success_stories.rst:10
+msgid "Shopfloor Monitoring bei der SICK AG"
+msgstr ""
+
+#: ../docs/source/success_stories.rst:13
+msgid "Upload KIT + SICK poster"
+msgstr ""
+
+#: ../docs/source/success_stories.rst:15
+msgid "**Involved partners**: Ondics GmbH, Worldline, SICK AG, KIT"
+msgstr ""
+
+#: ../docs/source/success_stories.rst:17
+msgid "**Results**: Better understanding of live data and optimization potential"
+msgstr ""
+
+#: ../docs/source/success_stories.rst:19
+msgid "Electronic manufacturing is a sensitive process in which humidity and temperature, for example, play an important role. To ensure quality, optical inspection steps are performed on every printed circuit board (PCB)."
+msgstr ""
+
+#: ../docs/source/success_stories.rst:26
+msgid "Anwendungsszenario der Apps bei der SICK AG"
+msgstr ""
+
+#: ../docs/source/success_stories.rst:28
+msgid "However, under certain conditions, issues with the PCBs may still arise. Therefore, to improve the quality and throughput, the shop floor has to be continually upgraded with new capabilities that allow employees to promptly react and reduce errors."
+msgstr ""
+
+#: ../docs/source/success_stories.rst:30
+msgid "First, employees need to visualize the quality inspection data, both on large screens and their smartphone. This in turn allows them make timely and more informed decisions. Second, temperature and humidity sensors need to be installed in order to monitor the production environment. In case some sensors use different units (˚C vs. ˚F), they still need to present meaningful data to workers or other machines. Third, inspection, temperature and humidity data need to be aggregated for both workers and data analysts. The latter need to be able to use the data in order to train machine learning models for predictive maintenance."
+msgstr ""
+
+#: ../docs/source/success_stories.rst:32
+msgid "The fourth and final step, is the deployment of the machine learning algorithm into production and associating the predictions with machine location and PCB meta-data. This scenario requires physical devices and software from different vendors that need to interoperate to achieve the desired outcome. While the predictive analytics step is still in development, the mashup is explained in greater detail in the following section."
+msgstr ""
+
+#: ../docs/source/success_stories.rst:39
+msgid "Gesamtüberblick des implementierten Szenarios zu Sensordatenfusion"
+msgstr ""
+
+#: ../docs/source/success_stories.rst:41
+msgid "The proof of concept mashup shown in the figure above, consists of apps that are implemented as stand-alone Docker containers with functionality restricted to a small, business value generating subset. Every app is uniquely identifiable and addressable within the web by its URL and RESTful interactions are possible."
+msgstr ""
+
+#: ../docs/source/success_stories.rst:43
+msgid "The apps have been developed independently and we have relied on common semantics to allow their interoperation. The App Hub (lower left) is a simple app store. It manages each app’s life cycle by generating Docker-Compose files according to which apps are part of requested mashups. SIWIAT3 is an embedded gateway-as-a-box with internal apps developed by the authors and targeted at the industrial shop floor. Its role is to wrap legacy or non-web-capable sensors, annotate the measured values and make them available via a REST interface."
+msgstr ""
+
+#: ../docs/source/success_stories.rst:45
+msgid "MOSCITO4 is a semantic middleware developed by Worldline based on OSGI, Apache Jena, and the RDF4J framework. It provides a set of functionality for the management of semantically linked data accessible through RESTful Web Services, such as ontology and rule management, and, moreover, SPARQLEndpoints as well as triple store connections and data integration from heterogeneous data sources. MOSCITO acts as a shop floor semantics engine and a visualizing tool that collects and connects related data form heterogeneous data sources but also manages ontologies and rules."
+msgstr ""
+
+#: ../docs/source/success_stories.rst:47
+msgid "Machine 1 and 2 are automatic optical inspection (AOI) machines. Inspection data is available via publish/subscribe through the data app (using server-sent events). Adding another machine to the mashup requires just the installation of the data app for the corresponding machine from the store."
+msgstr ""
+
+#: ../docs/source/success_stories.rst:49
+msgid "The inspection data is visualized inside a web app that uses a responsive design. By leveraging the semantic annotations in the payload this visualization app can also associate the different input data from the inspection machines with the aggregated temperature data from MOSCITO. Both SIWIAT and MOSCITO do not need to rely on a common predefined data model for exploring, visualizing or processing data. Therefore, the integration of shop floor data into business processes can be performed using semantics-driven. These apps may even proxy the interaction to enterprise resource planning (ERP) or manufacturing execution system (MES) systems."
+msgstr ""
+
+#: ../docs/source/success_stories.rst:51
+msgid "Das Publizierte Paper über den Use-Case ist in der `ACM digital library zu finden <https://dl.acm.org/citation.cfm?id=3017999>`_, eine kostenfreie Variante kann man über den Authorizer-Link der `Author-Website <http://www.teco.edu/people/miclaus/>`_ beziehen."
+msgstr ""
+
+#: ../docs/source/success_stories.rst:55
+msgid "Ondics GmbH"
+msgstr ""
+

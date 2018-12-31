@@ -1,0 +1,318 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Andrei Miclaus
+# This file is distributed under the same license as the ScaleIT Platform Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ScaleIT Platform Documentation 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 18:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/source/app_readiness.rst:4
+msgid "Industry 4.0 App Readiness"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:6
+msgid "DockerCompose is the chosen aggregation unit for an App. However, it can be replaced with Kubernetes Pods or Rancherfiles without changing the logical construction of an App."
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:9
+msgid "Work in progress"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:12
+msgid "App Containers (Docker Subsystem)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:14
+msgid "|checkbox| Git repository conforms to ScaleIT template \\(Domain Apps, Sidecars folders\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:54
+msgid "|checkbox| Dockerfile -> Docker Build -> Image: includes all needed Dependencies \\(Self Contained-ness/in sich geschlossen\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:56
+msgid "|checkbox| Docker Compose declares all needed Services \\(no other services will be started within the app\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:58
+msgid "|checkbox| The App can be started with a single \"click\" \\(docker-compose up\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:60
+msgid "|checkbox| Docker Compose declares all needed Volumes \\(Data Volume + Log Volume\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:62
+msgid "|checkbox| The App can be stopped and restarted without domain data loss or \\(docker-compose stop/restart\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:64
+msgid "|checkbox| The App containers can be deleted without domain data loss \\(docker-compose down\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:66
+msgid "|checkbox| The App containers can be replaced by new containers without domain data loss or corruption \\(docker-compose down + build + up\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:68
+msgid "|checkbox| The timezone set for the container is UTC. See `Time Zone Details, Why UTC?`_"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:70
+msgid "|checkbox| Data Migration check may be necessary"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:72
+msgid "|checkbox| The created containers shut down properly \\(no PID 1 zombies\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:74
+msgid "|checkbox| Adhere to the `Dockerfile best practices`_"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:79
+msgid "App Interfaces"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:81
+msgid "Sinn dieser Interfaces: \"Eine Web-UI zu haben um Administration und Datensicht auf die App und das was sie macht zu erlauben\"."
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:83
+msgid "Administration Endpoint `/admin`"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:85
+msgid "admin/config"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:86
+msgid "admin/doc"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:87
+msgid "admin/log"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:88
+msgid "admin/status"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:90
+msgid "User Endpoint `/user`"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:92
+msgid "user/doc"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:93
+msgid "user/status"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:95
+msgid "Developer Endpoint `/dev`"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:97
+msgid "dev/doc"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:98
+msgid "dev/rest"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:99
+msgid "dev/swagger.yaml"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:102
+msgid "Insert Link to Spec as Swagger file"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:105
+msgid "App Catalog Entry"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:107
+msgid "|checkbox| A separate git repository contains the meta-data from the Resources/Store directory in a Rancher-compatible directory structure"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:110
+msgid "|checkbox| Auto-generated entries for this repository \\(e.g. git post commit hooks that push meta-data to this app-store repository\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:135
+msgid "Contents of the `config.yml`"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:148
+msgid "This information is strongly inspired by the Rancher Catalog system: [http://rancher.com/docs/rancher/v1.2/en/catalog/private-catalog/](http://rancher.com/docs/rancher/v1.2/en/catalog/private-catalog/)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:150
+msgid "A catalog entry generator can be found here: [https://github.com/slashgear/generator-rancher-catalog](https://github.com/slashgear/generator-rancher-catalog)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:153
+msgid "App Documentation"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:155
+msgid "|checkbox| Readme states the purpose of the App"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:157
+msgid "|checkbox| Readme lists the services and describes them shortly"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:159
+msgid "|checkbox| Playbook includes App Lifecycle commands (pull, start, stop, upgrade)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:161
+msgid "|checkbox| FAQ"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:163
+msgid "|checkbox| Known common Errors"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:165
+msgid "|checkbox| Architecture Diagramm (eg. UML Deployment Diagramm)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:167
+msgid "|checkbox| Readme includes logo and screenshots"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:169
+msgid "|checkbox| App Requirements (RAM, CPU, HDD)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:171
+msgid "|checkbox| Examples:"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:173
+msgid "`Chronocommand <https://projects.teco.edu/projects/chronocommand-time-sheet-management/repository/chronocommand>`_"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:175
+msgid "`ScaleIT Gitlab <https://github.com/ScaleIT-Org/sapp-teco-gitlab>`_"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:177
+msgid "### ScaleIT App Compliance Level"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:179
+msgid "|checkbox| App has a User UI"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:181
+msgid "|checkbox| App has an Administration UI"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:183
+msgid "|checkbox| App has the networking information included \\(routing address\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:187
+msgid "App Behaviour"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:189
+msgid "|checkbox| Logging"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:191
+msgid "|checkbox| Graceful degradation"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:195
+msgid "Software Engineering"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:197
+msgid "|checkbox| Reactive Design \\(App Richtlinien\\)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:199
+msgid "|checkbox| [https://projects.teco.edu/projects/scaleit-ap2/wiki/Richtlinien\\_App-Entwicklung]( https://projects.teco.edu/projects/scaleit-ap2/wiki/Richtlinien_App-Entwicklung)"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:203
+msgid "Development Process"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:205
+msgid "|checkbox| Automated build pipeline"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:208
+msgid "|checkbox| Continuous Integration"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:211
+msgid "|checkbox| Use Dynamic Port ranges 49,152 through 65,535."
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:219
+msgid "Time Zone Details, Why UTC?"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:221
+msgid "Why Not {PST, GMT, PDT, etc}?[#serverutc]_"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:223
+msgid "UTC has no Daylight Savings"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:224
+msgid "Uniform time across all sites, factories and offices"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:225
+msgid "Decreases data corruption chances due to inconsistent time zones"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:226
+msgid "Standardized time across all our Apps will ensure logs, databases and all components relying on the time will function in a predictibale and interoperable way."
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:229
+msgid "This will move the problem up into the UI layer. We recommend working with UTC inside the App logic and converting UTC to local time only on the user interface."
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:230
+msgid "Tech Tip: Using the angular DatePipe in the UI will help you achieve this easily [#datePipe]_. Look in the programming language of your choice to find similar useful features."
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:237
+msgid "UTC in a glance [#utc]_"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:240
+msgid "UTC in a glance, https://www.timeanddate.com/worldclock/timezone/utc"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:242
+msgid "An argument for UTC, http://yellerapp.com/posts/2015-01-12-the-worst-server-setup-you-can-make.html"
+msgstr ""
+
+#: ../docs/source/app_readiness.rst:244
+msgid "Angular DatePipe, https://angular.io/api/common/DatePipe"
+msgstr ""
+

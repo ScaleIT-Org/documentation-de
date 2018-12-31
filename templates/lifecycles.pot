@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Andrei Miclaus
+# This file is distributed under the same license as the ScaleIT Platform Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ScaleIT Platform Documentation 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 18:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/source/lifecycles.rst:2
+msgid "ScaleIT Lifecycle Section"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:4
+msgid "The lifecycles of different aspects of the ScaleIT ecosystem are presented in this chapter."
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:7
+msgid "From Idea to App"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:10
+msgid "App Store Lifecycle"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:12
+msgid "Review Process"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:13
+msgid "etc."
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:16
+msgid "Deploy Lifecycle"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:18
+msgid "also look into googling: circle ci lifecycle"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:20
+msgid "The stages through which an App goes until it reaches"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:22
+msgid "The pull request runs tests and is marked as good to merge into master"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:23
+msgid "The engineer merges the PR and tests are again run against master"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:24
+msgid "That commit of master deploys to our centralized staging server"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:25
+msgid "Sanity checks run automatically on the staging server"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:26
+msgid "That commit then deploys to production"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:27
+msgid "Sanity checks run on production"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:28
+msgid "Success and failure notifications are sent via Slack at every step"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:29
+msgid "Rollback possible for several weeks (depending on the storage settings)"
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:33
+msgid "Don't forget to create release notes and bump the necessary versions."
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:35
+msgid "In the event of a rollback, an engineer must manually deploy from their machine to cause the latest release status to change and implicitly “re-activate” continuous deployment."
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:37
+msgid "There should be checks with kill switches along the way (e.g. for every environment and one final manual approval from shop floor process owners)."
+msgstr ""
+
+#: ../docs/source/lifecycles.rst:39
+msgid "Important people (on call) should get notified of deployments statuses"
+msgstr ""
+

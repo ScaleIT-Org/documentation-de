@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Industry 4.0 App Readiness &mdash; ScaleIT Platform Documentation 1.0.0 Dokumentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Stichwortverzeichnis"
+              href="genindex.html"/>
+        <link rel="search" title="Suche" href="search.html"/>
+    <link rel="top" title="ScaleIT Platform Documentation 1.0.0 Dokumentation" href="index.html"/>
+        <link rel="next" title="Networking" href="networking.html"/>
+        <link rel="prev" title="ScaleIT Architektur" href="architecture.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ScaleIT Platform Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="whatis.html">What is ScaleIT?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proposition.html">Value Proposition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scalability.html">Skalierung innerhalb ScaleIT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="success_stories.html">ScaleIT Success Stories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appdesign.html">ScaleIT App Design-Prinzipien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">ScaleIT Architektur</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Industry 4.0 App Readiness</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#app-containers-docker-subsystem">App Containers (Docker Subsystem)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app-interfaces">App Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app-catalog-entry">App Catalog Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app-documentation">App Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app-behaviour">App Behaviour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#software-engineering">Software Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development-process">Development Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#time-zone-details-why-utc">Time Zone Details, Why UTC?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="networking.html">Networking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="communication.html">Kommunikation auf der ScaleIT Plattform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lifecycles.html">ScaleIT Lifecycle Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">Sicherheit (Security) auf der ScaleIT Plattform</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ScaleIT Platform Documentation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Industry 4.0 App Readiness</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/app_readiness.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="industry-4-0-app-readiness">
+<span id="app-readiness"></span><h1>Industry 4.0 App Readiness<a class="headerlink" href="#industry-4-0-app-readiness" title="Link zu dieser Überschrift">¶</a></h1>
+<p>DockerCompose is the chosen aggregation unit for an App. However, it can be replaced with Kubernetes Pods or Rancherfiles without changing the logical construction of an App.</p>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Zu tun</p>
+<p class="last">Work in progress</p>
+</div>
+<div class="section" id="app-containers-docker-subsystem">
+<h2>App Containers (Docker Subsystem)<a class="headerlink" href="#app-containers-docker-subsystem" title="Link zu dieser Überschrift">¶</a></h2>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Git repository conforms to ScaleIT template (Domain Apps, Sidecars folders)</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>&lt;app_name&gt;
+├── docker-compose.yml
+├── dc.build.yml [optional]
+├── .env.default
+├── .env.test.default [optional]
+├── .env.staging.default [optional]
+├── .env.production.default [optional]
+├── README
+├── Resources/
+| ├── Documentation/
+| ├── Rancher/
+| | ├── catalogIcon-&lt;app1&gt;.svg //jpg,png or other format ok
+| | ├── appHubIcon-&lt;app1&gt;.svg //jpg,png or other format ok
+| | ├── config.yml // meta-data about the app
+| | └── Screenshots/ // App Screenshots
+| | | └── 1.jpg
+| | └── Versions/
+| | .   └── 0/
+| | .   . └── docker-compose.yml // compose version 2 due to compatibility reasons
+| | .   . └── rancher-compose.yml
+| └── Documentation/
+| └── README
+├── Domain Software/
+| ├── DomainContainer1/
+| | ├── Dockerfile
+| | └── &lt;some other files&gt;
+| └── DomainContainer2/
+| └── Dockerfile
+└── Platform Sidecars/ [optional]
+. ├── SidecarContainer1/
+. | ├── Dockerfile
+. | └── &lt;some other files&gt;
+. └── SidecarContainer2/
+. . └── Dockerfile
+</pre></div>
+</div>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Dockerfile -&gt; Docker Build -&gt; Image: includes all needed Dependencies (Self Contained-ness/in sich geschlossen)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Docker Compose declares all needed Services (no other services will be started within the app)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> The App can be started with a single „click“ (docker-compose up)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Docker Compose declares all needed Volumes (Data Volume + Log Volume)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> The App can be stopped and restarted without domain data loss or (docker-compose stop/restart)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> The App containers can be deleted without domain data loss (docker-compose down)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> The App containers can be replaced by new containers without domain data loss or corruption (docker-compose down + build + up)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> The timezone set for the container is UTC. See <a class="reference internal" href="#time-zone-details-why-utc">Time Zone Details, Why UTC?</a></p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Data Migration check may be necessary</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> The created containers shut down properly (no PID 1 zombies)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Adhere to the <a class="reference external" href="https://docs.docker.com/develop/develop-images/dockerfile_best-practices/">Dockerfile best practices</a></p>
+</div>
+<div class="section" id="app-interfaces">
+<h2>App Interfaces<a class="headerlink" href="#app-interfaces" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Sinn dieser Interfaces: „Eine Web-UI zu haben um Administration und Datensicht auf die App und das was sie macht zu erlauben“.</p>
+<p>Administration Endpoint <cite>/admin</cite></p>
+<ul class="simple">
+<li>admin/config</li>
+<li>admin/doc</li>
+<li>admin/log</li>
+<li>admin/status</li>
+</ul>
+<p>User Endpoint <cite>/user</cite></p>
+<ul class="simple">
+<li>user/doc</li>
+<li>user/status</li>
+</ul>
+<p>Developer Endpoint <cite>/dev</cite></p>
+<ul class="simple">
+<li>dev/doc</li>
+<li>dev/rest</li>
+<li>dev/swagger.yaml</li>
+</ul>
+<div class="admonition-todo admonition" id="index-1">
+<p class="first admonition-title">Zu tun</p>
+<p class="last">Insert Link to Spec as Swagger file</p>
+</div>
+</div>
+<div class="section" id="app-catalog-entry">
+<h2>App Catalog Entry<a class="headerlink" href="#app-catalog-entry" title="Link zu dieser Überschrift">¶</a></h2>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> A separate git repository contains the meta-data from the Resources/Store directory
+in a Rancher-compatible directory structure</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Auto-generated entries for this repository (e.g. git post commit hooks that push
+meta-data to this app-store repository)</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>-- templates
+|-- &lt;app1&gt;
+| |-- 0 // App1-Version 0
+| | |-- docker-compose.yml
+| | |-- rancher-compose.yml
+| | |-- answers.txt //environment variables for rancher-compose
+| | |-- README.md
+| |-- 1 // App-Version 1
+| | |-- docker-compose.yml
+| | |-- rancher-compose.yml
+| | |-- README.md
+| |-- catalogIcon-&lt;app1&gt;.svg //jpg or other format ok
+| |-- appHubIcon-&lt;app1&gt;.svg //jpg or other format ok
+| |-- config.yml // meta-data about the app
+| |-- README.md
+|-- &lt;app2&gt;
+| |-- 0 // App2-Version 0
+...
+</pre></div>
+</div>
+<p>Contents of the <cite>config.yml</cite></p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>name: # Name of the Catalog Entry
+description: |
+# Description of the Catalog Entry
+version: # Version of the Catalog to be used
+category: # Category to be used for searching catalog entries
+maintainer: # The maintainer of the catalog entry
+license: # The license
+projectURL: # A URL related to the catalog entry
+</pre></div>
+</div>
+<p>This information is strongly inspired by the Rancher Catalog system: [<a class="reference external" href="http://rancher.com/docs/rancher/v1.2/en/catalog/private-catalog/](http://rancher.com/docs/rancher/v1.2/en/catalog/private-catalog/">http://rancher.com/docs/rancher/v1.2/en/catalog/private-catalog/](http://rancher.com/docs/rancher/v1.2/en/catalog/private-catalog/</a>)</p>
+<p>A catalog entry generator can be found here: [<a class="reference external" href="https://github.com/slashgear/generator-rancher-catalog](https://github.com/slashgear/generator-rancher-catalog">https://github.com/slashgear/generator-rancher-catalog](https://github.com/slashgear/generator-rancher-catalog</a>)</p>
+</div>
+<div class="section" id="app-documentation">
+<h2>App Documentation<a class="headerlink" href="#app-documentation" title="Link zu dieser Überschrift">¶</a></h2>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Readme states the purpose of the App</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Readme lists the services and describes them shortly</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Playbook includes App Lifecycle commands (pull, start, stop, upgrade)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> FAQ</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Known common Errors</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Architecture Diagramm (eg. UML Deployment Diagramm)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Readme includes logo and screenshots</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> App Requirements (RAM, CPU, HDD)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Examples:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://projects.teco.edu/projects/chronocommand-time-sheet-management/repository/chronocommand">Chronocommand</a></li>
+<li><a class="reference external" href="https://github.com/ScaleIT-Org/sapp-teco-gitlab">ScaleIT Gitlab</a></li>
+</ul>
+<p>### ScaleIT App Compliance Level</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> App has a User UI</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> App has an Administration UI</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> App has the networking information included (routing address)</p>
+</div>
+<div class="section" id="app-behaviour">
+<h2>App Behaviour<a class="headerlink" href="#app-behaviour" title="Link zu dieser Überschrift">¶</a></h2>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Logging</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Graceful degradation</p>
+</div>
+<div class="section" id="software-engineering">
+<h2>Software Engineering<a class="headerlink" href="#software-engineering" title="Link zu dieser Überschrift">¶</a></h2>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Reactive Design (App Richtlinien)</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> [<a class="reference external" href="https://projects.teco.edu/projects/scaleit-ap2/wiki/Richtlinien_App-Entwicklung">https://projects.teco.edu/projects/scaleit-ap2/wiki/Richtlinien_App-Entwicklung</a>](
+<a class="reference external" href="https://projects.teco.edu/projects/scaleit-ap2/wiki/Richtlinien_App-Entwicklung">https://projects.teco.edu/projects/scaleit-ap2/wiki/Richtlinien_App-Entwicklung</a>)</p>
+</div>
+<div class="section" id="development-process">
+<h2>Development Process<a class="headerlink" href="#development-process" title="Link zu dieser Überschrift">¶</a></h2>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Automated build pipeline</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Continuous Integration</p>
+<p><a class="reference internal" href="_images/icon_checkbox.png"><img alt="checkbox" src="_images/icon_checkbox.png" style="width: 14.6px; height: 14.8px;" /></a> Use Dynamic Port ranges 49,152 through 65,535.</p>
+</div>
+<div class="section" id="time-zone-details-why-utc">
+<h2>Time Zone Details, Why UTC?<a class="headerlink" href="#time-zone-details-why-utc" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Why Not {PST, GMT, PDT, etc}?[#serverutc]_</p>
+<ul class="simple">
+<li>UTC has no Daylight Savings</li>
+<li>Uniform time across all sites, factories and offices</li>
+<li>Decreases data corruption chances due to inconsistent time zones</li>
+<li>Standardized time across all our Apps will ensure logs, databases and all components relying on the time will function in a predictibale and interoperable way.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<dl class="last docutils">
+<dt>This will move the problem up into the UI layer. We recommend working with UTC inside the App logic and converting UTC to local time only on the user interface.</dt>
+<dd>Tech Tip: Using the angular DatePipe in the UI will help you achieve this easily <a class="footnote-reference" href="#datepipe" id="id1">[3]</a>. Look in the programming language of your choice to find similar useful features.</dd>
+</dl>
+</div>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/utc-timezone.png"><img alt="UTC in a glance: No DST, No GMT/UTC offset, 2 hours behind Baden-Württemberg" src="_images/utc-timezone.png" style="width: 501.0px; height: 207.0px;" /></a>
+<p class="caption"><span class="caption-text">UTC in a glance <a class="footnote-reference" href="#utc" id="id2">[1]</a></span></p>
+</div>
+<table class="docutils footnote" frame="void" id="utc" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>UTC in a glance, <a class="reference external" href="https://www.timeanddate.com/worldclock/timezone/utc">https://www.timeanddate.com/worldclock/timezone/utc</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="serverutc" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[2]</td><td>An argument for UTC, <a class="reference external" href="http://yellerapp.com/posts/2015-01-12-the-worst-server-setup-you-can-make.html">http://yellerapp.com/posts/2015-01-12-the-worst-server-setup-you-can-make.html</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="datepipe" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[3]</a></td><td>Angular DatePipe, <a class="reference external" href="https://angular.io/api/common/DatePipe">https://angular.io/api/common/DatePipe</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="networking.html" class="btn btn-neutral float-right" title="Networking" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="architecture.html" class="btn btn-neutral" title="ScaleIT Architektur" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Andrei Miclaus.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

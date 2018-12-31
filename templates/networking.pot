@@ -1,0 +1,419 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Andrei Miclaus
+# This file is distributed under the same license as the ScaleIT Platform Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ScaleIT Platform Documentation 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 18:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/source/networking.rst:2
+msgid "Networking"
+msgstr ""
+
+#: ../docs/source/networking.rst:5
+msgid "Port-Vergabe"
+msgstr ""
+
+#: ../docs/source/networking.rst:8
+msgid "Network Ports für Apps"
+msgstr ""
+
+#: ../docs/source/networking.rst:10
+msgid "Als Konvention werden Ports innerhalb der Plattform zwischen den dynamischen Ports 49,152 und 65,535 vergeben."
+msgstr ""
+
+#: ../docs/source/networking.rst:12
+msgid "Port range 49500 through 49599 for platform components"
+msgstr ""
+
+#: ../docs/source/networking.rst:13
+msgid "Port range 49600 through 49699 for business essentials components"
+msgstr ""
+
+#: ../docs/source/networking.rst:14
+msgid "Port range 49700 and above for apps"
+msgstr ""
+
+#: ../docs/source/networking.rst:16
+msgid "Port ranges are assigned for companies, e.g. 49700-49900 for Ondics Apps"
+msgstr ""
+
+#: ../docs/source/networking.rst:18
+msgid "Tabelle der Port-Konventionen in ScaleIT:"
+msgstr ""
+
+#: ../docs/source/networking.rst:21
+msgid "Port"
+msgstr ""
+
+#: ../docs/source/networking.rst:21
+msgid "Komponente"
+msgstr ""
+
+#: ../docs/source/networking.rst:21
+msgid "Organisation"
+msgstr ""
+
+#: ../docs/source/networking.rst:23
+msgid "80"
+msgstr ""
+
+#: ../docs/source/networking.rst:23
+msgid "ScaleIT Proxy"
+msgstr ""
+
+#: ../docs/source/networking.rst:23
+msgid "ScaleIT-Org"
+msgstr ""
+
+#: ../docs/source/networking.rst:25
+msgid "49500-50000"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "**ScaleIT-Org**"
+msgstr ""
+
+#: ../docs/source/networking.rst:27
+msgid "49500"
+msgstr ""
+
+#: ../docs/source/networking.rst:27
+msgid "Rancher Server"
+msgstr ""
+
+#: ../docs/source/networking.rst:29
+msgid "49501"
+msgstr ""
+
+#: ../docs/source/networking.rst:29
+#: ../docs/source/networking.rst:88
+msgid "App Registry"
+msgstr ""
+
+#: ../docs/source/networking.rst:31
+msgid "49502"
+msgstr ""
+
+#: ../docs/source/networking.rst:31
+msgid "Identity Management"
+msgstr ""
+
+#: ../docs/source/networking.rst:33
+msgid "49503"
+msgstr ""
+
+#: ../docs/source/networking.rst:33
+msgid "MQTT Broker"
+msgstr ""
+
+#: ../docs/source/networking.rst:35
+msgid "ScaleIT Entwicklungs-Partner"
+msgstr ""
+
+#: ../docs/source/networking.rst:37
+msgid "50000-50500"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "ATOS"
+msgstr ""
+
+#: ../docs/source/networking.rst:39
+msgid "50500-51000"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "Fraunhofer"
+msgstr ""
+
+#: ../docs/source/networking.rst:41
+msgid "51000-51500"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "KIT"
+msgstr ""
+
+#: ../docs/source/networking.rst:43
+msgid "51500-52000"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "ondics"
+msgstr ""
+
+#: ../docs/source/networking.rst:45
+msgid "52000-52500"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "SICK"
+msgstr ""
+
+#: ../docs/source/networking.rst:47
+msgid "53000-53500"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "SmartHMI"
+msgstr ""
+
+#: ../docs/source/networking.rst:49
+msgid "54000-54500"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "ZEISS"
+msgstr ""
+
+#: ../docs/source/networking.rst:51
+msgid "ScaleIT Anwendungs-Partner"
+msgstr ""
+
+#: ../docs/source/networking.rst:53
+msgid "54500-54600"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "digiraster"
+msgstr ""
+
+#: ../docs/source/networking.rst:55
+msgid "54600-54700"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "Feinmetall"
+msgstr ""
+
+#: ../docs/source/networking.rst:57
+msgid "54700-54800"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "microTEC Südwest"
+msgstr ""
+
+#: ../docs/source/networking.rst:59
+msgid "54800-54900"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "Rood Microtec"
+msgstr ""
+
+#: ../docs/source/networking.rst:61
+msgid "59000-55000"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "Universität Stuttgart"
+msgstr ""
+
+#: ../docs/source/networking.rst:63
+msgid "Externe Partner"
+msgstr ""
+
+#: ../docs/source/networking.rst:65
+msgid "55000-55100"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "ITstrategen"
+msgstr ""
+
+#: ../docs/source/networking.rst:67
+msgid "55100-55200"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "YUMA technologies"
+msgstr ""
+
+#: ../docs/source/networking.rst:69
+msgid "55200-55300"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "Ingenieurbüro Teichgräber"
+msgstr ""
+
+#: ../docs/source/networking.rst:71
+msgid "55300-55400"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "HS Esslingen"
+msgstr ""
+
+#: ../docs/source/networking.rst:73
+msgid "55400-65536"
+msgstr ""
+
+#: ../docs/source/networking.rst:0
+msgid "Frei"
+msgstr ""
+
+#: ../docs/source/networking.rst:85
+msgid "Funktionen der Plattform Essentials (Zentrale Services)"
+msgstr ""
+
+#: ../docs/source/networking.rst:90
+msgid "In der Referenzplattform durch ETCD implementiert."
+msgstr ""
+
+#: ../docs/source/networking.rst:92
+msgid "kann von jeder app als key-value store genutzt werden"
+msgstr ""
+
+#: ../docs/source/networking.rst:93
+msgid "der top-node muss der fqdn-name der app sein (z.b."
+msgstr ""
+
+#: ../docs/source/networking.rst:94
+msgid "/pacman_1.host_1.scaleit)"
+msgstr ""
+
+#: ../docs/source/networking.rst:95
+msgid "weitere regeln dazu: - jede app sollte nur die einträge der eigenen app lesen - die zentralen apps haben spezielle root-nodes, z.b."
+msgstr ""
+
+#: ../docs/source/networking.rst:98
+msgid "/apphub"
+msgstr ""
+
+#: ../docs/source/networking.rst:99
+msgid "wenn eine app gelöscht wird kann der node gelöscht werden"
+msgstr ""
+
+#: ../docs/source/networking.rst:100
+msgid "(z.b. von einem registry-cleaner-prozess)"
+msgstr ""
+
+#: ../docs/source/networking.rst:101
+msgid "die apps dürfen den etcd nicht als massendatenspeicher"
+msgstr ""
+
+#: ../docs/source/networking.rst:102
+msgid "nutzen"
+msgstr ""
+
+#: ../docs/source/networking.rst:103
+msgid "systemweite einstellungen finden sich unter /scaleit,"
+msgstr ""
+
+#: ../docs/source/networking.rst:104
+msgid "z.b. /scaleit/language oder /scaleit/brand/company-name... alle apps solten das berücksichtigen"
+msgstr ""
+
+#: ../docs/source/networking.rst:109
+msgid "Fragen zu den Anforderungen and das Networking in ScaleIT"
+msgstr ""
+
+#: ../docs/source/networking.rst:111
+msgid "Der Zugang nach außen soll möglich sein (z.B. \"ping google.de\")"
+msgstr ""
+
+#: ../docs/source/networking.rst:112
+msgid "Wie werden zentrale Services aus einem Container angesprochen?"
+msgstr ""
+
+#: ../docs/source/networking.rst:113
+msgid "Ideal wäre sowas wie \"ping apphub.coreservice.scaleit\"?"
+msgstr ""
+
+#: ../docs/source/networking.rst:114
+msgid "Wie werden andere Container angesprochen? Achtung: Apps können mehrfach instantiiert werden oder auf verschiedenen Hosts laufen!"
+msgstr ""
+
+#: ../docs/source/networking.rst:115
+msgid "Ideal wäre \"ping pacman_1.host_1.scaleit\""
+msgstr ""
+
+#: ../docs/source/networking.rst:119
+msgid "Wie können Services von außen angesprochen werden?"
+msgstr ""
+
+#: ../docs/source/networking.rst:117
+msgid "Hierzu sollte im Firmennetz *.scaleit.company.com an die ScaleIT-Plattform weitergeleitet werden"
+msgstr ""
+
+#: ../docs/source/networking.rst:118
+msgid "Der DNS-Name pacman_1.host_1.scaleit.company.com würde dann zur App führen"
+msgstr ""
+
+#: ../docs/source/networking.rst:122
+msgid "Was muss in den docker-compose stehen?"
+msgstr ""
+
+#: ../docs/source/networking.rst:122
+msgid "Springe zu `Docker Compose network configuration`_"
+msgstr ""
+
+#: ../docs/source/networking.rst:126
+msgid "Was muss auf Docker-Ebene passieren (sollen wir ein eigenes Docker-Netzwerk definieren?)"
+msgstr ""
+
+#: ../docs/source/networking.rst:125
+msgid "Ja, auf Docker (Container) Ebene wird es mehrere Netzwerke geben. Siehe `ScaleIT App Networking`_"
+msgstr ""
+
+#: ../docs/source/networking.rst:129
+msgid "Docker Compose hier!"
+msgstr ""
+
+#: ../docs/source/networking.rst:134
+msgid "ScaleIT App Networking"
+msgstr ""
+
+#: ../docs/source/networking.rst:136
+msgid "Ein logischer Server mit zentralen Diensten, die nur einmalig im System vorkommen können:"
+msgstr ""
+
+#: ../docs/source/networking.rst:138
+msgid "Rancher"
+msgstr ""
+
+#: ../docs/source/networking.rst:139
+msgid "App-Hub"
+msgstr ""
+
+#: ../docs/source/networking.rst:140
+msgid "Licence Manager"
+msgstr ""
+
+#: ../docs/source/networking.rst:141
+msgid "Yellow Pages (ETCD)"
+msgstr ""
+
+#: ../docs/source/networking.rst:142
+msgid "LDAP / OAuth-Server"
+msgstr ""
+
+#: ../docs/source/networking.rst:144
+msgid "Ein oder mehrere Hosts, auf dem Apps laufen."
+msgstr ""
+
+#: ../docs/source/networking.rst:146
+msgid "Diagrams inspired by `_1Backend <https://github.com/1backend/1backend/blob/master/docs/services.md>`_"
+msgstr ""
+
+#: ../docs/source/networking.rst:169
+msgid "HTTP Request Headers"
+msgstr ""
+
+#: ../docs/source/networking.rst:171
+msgid "Copy from Github repo"
+msgstr ""
+

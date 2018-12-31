@@ -1,0 +1,266 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Andrei Miclaus
+# This file is distributed under the same license as the ScaleIT Platform Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ScaleIT Platform Documentation 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 18:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/source/appdesign.rst:3
+msgid "ScaleIT App Design-Prinzipien"
+msgstr ""
+
+#: ../docs/source/appdesign.rst:5
+msgid "In diesem Kapitel werden Design-Prinzipien vorgestellt die dazu dienen eine saubere Implementierung der Software unterstützen. Diese Entwicklungsprinzipien sind eine Sammlung von Best-Practices aus der modernen Software-Entwicklung und fokussieren sich auf die Bedürfnisse des betrieblichen Hallenbodens."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:7
+msgid "Eine App ist ein logische Konstrukt, dass der verbesserung der User-Experience (UX) dient."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:9
+msgid "Die konkrete softwaretechnische Architektur der ScaleIT Plattform wird in Kapitel `ScaleIT Architektur`_ beschrieben."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:11
+msgid "Die App Compliance Level werden im Kapitel `Compliance Level`_ beschrieben."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:14
+msgid "App Software-Design-Prinzipien"
+msgstr ""
+
+#: ../docs/source/appdesign.rst:16
+msgid "ScaleIT Apps are a model of the pattern of multiple cooperating processes which form a cohesive unit of service. They simplify application deployment and management by providing a higher-level abstraction than the set of their constituent applications. Apps serve as unit of deployment, horizontal scaling, and replication. Colocation (co-scheduling), shared fate (e.g. termination), coordinated replication, resource sharing, and dependency management should be handled automatically for containers in a app."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:18
+msgid "The applications in an App all use the same network namespace (same IP and port space), and can thus “find” each other and communicate using localhost. Because of this, applications in an App must coordinate their usage of ports. Each App has an IP address in a flat shared networking space that has full communication with other physical computers and Apps across the network. (Adapted from Kubernetes Pods)."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:23
+msgid "Leveraging Bounded Contexts"
+msgstr ""
+
+#: ../docs/source/appdesign.rst:25
+msgid "Zum Zweck der Modularisierung von Software eignet sich das Prinzip des Bounded Context [DDDEvans]_ [FowlerBoundedContext]_."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:27
+msgid "Bounded Context is a central pattern in Domain-Driven Design1. It is the focus of DDD's strategic design section which is all about dealing with large models and teams. DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships. DDD is about designing software based on models of the underlying domain. As you try to model a larger domain however, it gets progressively harder to build a single unified model. Different groups of people will use subtly different vocabularies in different parts of a large organization. So instead DDD divides up a large system into Bounded Contexts, each of which can have a unified model - essentially a way of structuring the domain into multiple canonical models [FowlerMultipleCanonicalModels]_."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:30
+msgid "Bounded Contexts use the principle of Shared- and Hidden Models [NewmanMicroservices]_, where each Bounded Context exposes an explicit interface to the outside world, the Shared Model, while the Hidden Models are irrelevant to other Bounded Contexts and therefore kept encapsulated privately."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:35
+msgid "Shared Model showing two bounded contexts"
+msgstr ""
+
+#: ../docs/source/appdesign.rst:37
+msgid "A Bounded Context is a unit of function with business value, that has high cohesion and reprensents a part of the domain (subdomain) or in other words it is a specific responsibility enforced by explicit boundaries [BoundedContextExplained]_. Examples: Billing, Machine Control Interface"
+msgstr ""
+
+#: ../docs/source/appdesign.rst:41
+msgid "App Richtlinien aus der Wiki hinzufügen"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:2
+msgid "App User Interface Design"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:4
+msgid "UX Principles"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:7
+msgid "Nielsen's 10 Heuristics for Good UX"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:9
+msgid "These 10 Heuristics help building user friendlier apps and identifying usability issues [Nielsen10]_."
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:13
+msgid "Visibility of system status"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:12
+msgid "The system should always keep users informed about what is going on, through appropriate feedback within reasonable time."
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:17
+msgid "Match between system and the real world"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:16
+msgid "The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order."
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:21
+msgid "User control and freedom"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:20
+msgid "Users often choose system functions by mistake and will need a clearly marked \"emergency exit\" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo."
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:25
+msgid "Consistency and standards"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:24
+msgid "Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions."
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:29
+msgid "Error prevention"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:28
+msgid "Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action."
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:33
+msgid "Recognition rather than recall"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:32
+msgid "Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate."
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:37
+msgid "Flexibility and efficiency of use"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:36
+msgid "Accelerators — unseen by the novice user — may often speed up the interaction for the expert user such that the system can cater to both inexperienced and experienced users. Allow users to tailor frequent actions."
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:41
+msgid "Aesthetic and minimalist design"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:40
+msgid "Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility."
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:45
+msgid "Help users recognize, diagnose, and recover from errors"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:44
+msgid "Error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution."
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:49
+msgid "Help and documentation"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:48
+msgid "Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search, focused on the user's task, list concrete steps to be carried out, and not be too large."
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:54
+msgid "Useful Tools:"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:53
+msgid "UX Check, http://www.uxcheck.co"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:55
+msgid "Treejack, https://www.optimalworkshop.com/treejack"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:59
+msgid "App Examples"
+msgstr ""
+
+#: ../docs/source/app_interface_design.rst:65
+msgid "ScaleIT App created in cooperation with `SICK AG <https://www.sick.com>`_ with a responsive Web interface and meta-data for smartphone homescreen embedding."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:48
+msgid "Bibliography"
+msgstr ""
+
+#: ../docs/source/appdesign.rst:50
+msgid "Evans, Domain-Driven Design: Tackling Complexity in the Heart of Software. Addison-Wesley Professional, 2003."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:52
+msgid "Lewis and M. Fowler, “Microservices @ Martinfowler.Com,” 2014. [Online]. Available: http://martinfowler.com/articles/microservices.html."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:54
+msgid "Newman, Building Microservices. O’Reilly Media, 2015."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:56
+msgid "“BoundedContext @ martinfowler.com.” [Online]. Available: http://martinfowler.com/bliki/BoundedContext.html."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:58
+msgid "“MicroservicePrerequisites @ martinfowler.com.” [Online]. Available: http://martinfowler.com/bliki/MicroservicePrerequisites.html."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:60
+msgid "6 “Microservices Resource Guide @ martinfowler.com.” [Online]. Available: http://martinfowler.com/microservices/."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:62
+msgid "7 C. van den Thillart, G. Vermaas, M. van der Linden, and J. Vermeir, “microservices-principles @ blog.xebia.com.” [Online]. Available: http://blog. xebia.com/tag/microservices-principles/."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:65
+msgid "8 “MultipleCanonicalModels @ martinfowler.com.” [Online]. Available: http://martinfowler.com/bliki/MultipleCanonicalModels.html."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:67
+msgid "9 “streamprocessing @ cloud.google.com.” [Online]. Available: https://cloud.google.com/solutions/architecture/streamprocessing."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:69
+msgid "10 “Unix_philosophy @ en.wikipedia.org.” [Online]. Available: https://en.wikipedia.org/wiki/Unix_philosophy#Eric_Raymond.E2.80.99s_17_Unix_Rules."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:71
+msgid "11 A. Wiggins, The Twelve-Factor App. 2012."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:73
+msgid "12 “Software Architecture @ Msdn.Microsoft.Com.” [Online]. Available: https://msdn.microsoft.com/en-us/library/ee658124.aspx."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:75
+msgid "“DDD - The Bounded Context Explained.” [Online]. Available: http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx."
+msgstr ""
+
+#: ../docs/source/appdesign.rst:77
+msgid "14 The 6 Traits of Reactive Microservices: Isolated, Asynchronous, Autonomous and more [Online]. Available: https://www.lightbend.com/blog/the-6-traits-of-reactive-microservices-isolated-asynchronous-autonomous"
+msgstr ""
+
+#: ../docs/source/appdesign.rst:79
+msgid "15 Richardson Maturity Model (REST), http://martinfowler.com/articles/richardsonMaturityModel.html"
+msgstr ""
+
+#: ../docs/source/appdesign.rst:81
+msgid "16 Rubber Duck Debugging, https://en.wikipedia.org/wiki/Rubber_duck_debugging"
+msgstr ""
+
+#: ../docs/source/appdesign.rst:83
+msgid "Jakob Nielsen, Ten Usability Heuristics, January 1, 1995, online: https://www.nngroup.com/articles/ten-usability-heuristics/"
+msgstr ""
+

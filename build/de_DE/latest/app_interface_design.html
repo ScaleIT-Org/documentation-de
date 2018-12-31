@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>App User Interface Design &mdash; ScaleIT Platform Documentation 1.0.0 Dokumentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Stichwortverzeichnis"
+              href="genindex.html"/>
+        <link rel="search" title="Suche" href="search.html"/>
+    <link rel="top" title="ScaleIT Platform Documentation 1.0.0 Dokumentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ScaleIT Platform Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="whatis.html">What is ScaleIT?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proposition.html">Value Proposition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scalability.html">Skalierung innerhalb ScaleIT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="success_stories.html">ScaleIT Success Stories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appdesign.html">ScaleIT App Design-Prinzipien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">ScaleIT Architektur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_readiness.html">Industry 4.0 App Readiness</a></li>
+<li class="toctree-l1"><a class="reference internal" href="networking.html">Networking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="communication.html">Kommunikation auf der ScaleIT Plattform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lifecycles.html">ScaleIT Lifecycle Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">Sicherheit (Security) auf der ScaleIT Plattform</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ScaleIT Platform Documentation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>App User Interface Design</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/app_interface_design.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="app-user-interface-design">
+<h1>App User Interface Design<a class="headerlink" href="#app-user-interface-design" title="Link zu dieser Überschrift">¶</a></h1>
+<p>User Experience (UX) Prinzipien</p>
+<div class="section" id="nielsen-s-10-heuristics-for-good-ux">
+<h2>Nielsen’s 10 Heuristics for Good UX<a class="headerlink" href="#nielsen-s-10-heuristics-for-good-ux" title="Link zu dieser Überschrift">¶</a></h2>
+<p>These 10 Heuristics help building user friendlier apps and identifying usability issues <a class="reference internal" href="appdesign.html#nielsen10" id="id1">[Nielsen10]</a>.</p>
+<dl class="docutils">
+<dt>Visibility of system status</dt>
+<dd>The system should always keep users informed about what is going on, through appropriate feedback within reasonable time.</dd>
+<dt>Match between system and the real world</dt>
+<dd>The system should speak the users‘ language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.</dd>
+<dt>User control and freedom</dt>
+<dd>Users often choose system functions by mistake and will need a clearly marked „emergency exit“ to leave the unwanted state without having to go through an extended dialogue. Support undo and redo.</dd>
+<dt>Consistency and standards</dt>
+<dd>Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions.</dd>
+<dt>Error prevention</dt>
+<dd>Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.</dd>
+<dt>Recognition rather than recall</dt>
+<dd>Minimize the user’s memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.</dd>
+<dt>Flexibility and efficiency of use</dt>
+<dd>Accelerators — unseen by the novice user — may often speed up the interaction for the expert user such that the system can cater to both inexperienced and experienced users. Allow users to tailor frequent actions.</dd>
+<dt>Aesthetic and minimalist design</dt>
+<dd>Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility.</dd>
+<dt>Help users recognize, diagnose, and recover from errors</dt>
+<dd>Error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution.</dd>
+<dt>Help and documentation</dt>
+<dd>Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search, focused on the user’s task, list concrete steps to be carried out, and not be too large.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<dl class="last docutils">
+<dt>Useful Tools:</dt>
+<dd><p class="first">UX Check, <a class="reference external" href="http://www.uxcheck.co">http://www.uxcheck.co</a></p>
+<p class="last">Treejack, <a class="reference external" href="https://www.optimalworkshop.com/treejack">https://www.optimalworkshop.com/treejack</a></p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="app-examples">
+<h2>App Examples<a class="headerlink" href="#app-examples" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="figure" id="id2">
+<img alt="ScaleIT value proposition in one glance" src="_images/industry_apps_screenshot.png" />
+<p class="caption"><span class="caption-text">ScaleIT App created in cooperation with <a class="reference external" href="https://www.sick.com">SICK AG</a> with a responsive Web interface and meta-data for smartphone homescreen embedding.</span></p>
+</div>
+<object data="_static/hallenboden_apps_big/hallenboden_apps_big.svg" type="image/svg+xml" width="100%"></object></div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Andrei Miclaus.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

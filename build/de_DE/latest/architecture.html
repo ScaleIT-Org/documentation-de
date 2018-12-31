@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ScaleIT Architektur &mdash; ScaleIT Platform Documentation 1.0.0 Dokumentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Stichwortverzeichnis"
+              href="genindex.html"/>
+        <link rel="search" title="Suche" href="search.html"/>
+    <link rel="top" title="ScaleIT Platform Documentation 1.0.0 Dokumentation" href="index.html"/>
+        <link rel="next" title="Industry 4.0 App Readiness" href="app_readiness.html"/>
+        <link rel="prev" title="ScaleIT App Design-Prinzipien" href="appdesign.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ScaleIT Platform Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="whatis.html">What is ScaleIT?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proposition.html">Value Proposition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scalability.html">Skalierung innerhalb ScaleIT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="success_stories.html">ScaleIT Success Stories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appdesign.html">ScaleIT App Design-Prinzipien</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ScaleIT Architektur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ebenen-der-architektur">Ebenen der Architektur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shopfloor-roles-supported-by-scaleit">Shopfloor Roles Supported by ScaleIT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app-anatomy">App Anatomy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sidecar-pattern">Sidecar Pattern</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="app_readiness.html">Industry 4.0 App Readiness</a></li>
+<li class="toctree-l1"><a class="reference internal" href="networking.html">Networking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="communication.html">Kommunikation auf der ScaleIT Plattform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lifecycles.html">ScaleIT Lifecycle Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">Sicherheit (Security) auf der ScaleIT Plattform</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ScaleIT Platform Documentation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>ScaleIT Architektur</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/architecture.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="scaleit-architektur">
+<span id="id1"></span><h1>ScaleIT Architektur<a class="headerlink" href="#scaleit-architektur" title="Link zu dieser Überschrift">¶</a></h1>
+<p>Don’t forget to look at the <a class="reference internal" href="appdesign.html#app-design"><span class="std std-ref">App Design Richtlinien</span></a> to build a better understanding of what a good App is.</p>
+<p><a class="reference internal" href="app_readiness.html#app-readiness"><span class="std std-ref">App Readiness Checklisten hier</span></a></p>
+<hr class="docutils" />
+<div class="section" id="ebenen-der-architektur">
+<h2>Ebenen der Architektur<a class="headerlink" href="#ebenen-der-architektur" title="Link zu dieser Überschrift">¶</a></h2>
+<p>The ScaleIT architecture allows teams or organisations to manage their own IoT landscape and innovate in their own pace using a parallel IT landscape. This landscape is usually called a shadow IT. This niche for the shadow IT arises from the dichotomous relation between shop floor software engineers and the company wide IT. While shop floor software engineers are enabled to have full control of their deployment environment, the company IT hosts these virtual environments isolated inside the company network. A shadow IT allows the shop floor teams to move independently to the central IT operations.</p>
+<p>In this layered architecture, layers below provide software side control for the layers above (bottom up). The top down interaction is facilitated mainly by using pre-built platform services as sidecars. These sidecars are deployed bundled with the Apps (Fig. 3).
+The figure below illustrates the abstracted planes of responsibility, each housing a different set of Apps:</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/architektur.png"><img alt="ScaleIT Architecture" src="_images/architektur.png" style="width: 583.0px; height: 573.5px;" /></a>
+<p class="caption"><span class="caption-text">ScaleIT Architektur mit den unterschiedlichen Ebenen und verantwortlichen Rollen.</span></p>
+</div>
+<dl class="docutils">
+<dt>Domain-Apps</dt>
+<dd>Apps that implement business cases reside on the domain App plane. It is the abstraction level at which business case applications are deployed (visualisation Apps or HMIs, machine learning Apps etc.). This is the plane where the process managers (Prozessleiter) would pick click-to-install Apps from an App store in support of the business processes. Workers come in contact with theses apps in their day to day work. Shop floor IT engineers deploy in-house App on this plane. Shop floor software innovation can thus be realized by adding a new or updated set of Apps.</dd>
+<dt>Business-Essentials</dt>
+<dd>The business essentials plane houses Apps that are rele- vant to the stability of the domain apps and therefore the business. This is also the plane where the IT team of the company would maintain their backup solutions, audit logs</dd>
+<dt>Platform-Essentials</dt>
+<dd>The platform essentials plane houses Apps that are re- quired to run the shop floor eco-system at an App level (App registry, App monitoring, routing, logging, App traces). This is the plane where a business would not need to do software lifecycle specific tasks as it will be comprised as open source, open platform distribution. Adapting the Apps on this plane is done through configuration via Web interfaces.</dd>
+<dt>Container Manager</dt>
+<dd>The container manager is responsible for the App lifecycle (start, stop, restart, update, replication) and provides an overview of the shop floor eco-system at a container level.</dd>
+<dt>Host System</dt>
+<dd>The host system is mainly a operating system running on hardware that is sufficient for the Apps deployed on it. The host system only requires a runtime engine for a con- tainer system (e.g. Docker). All subsequent software is in- stalled henceforth (bottom to top) as containers. Because all software runs inside containers, the host system can be ei- ther physically co-located with the shop floor or somewhere within the company or public cloud. Furthermore, addi- tional host systems may be Raspberry Pi-like devices where only an agent of the container manager is run.</dd>
+</dl>
+<p>By employing Web-based microservices, continuous deliv- ery, containerization, infrastructure as code and a DevOps culture, we believe that manufacturers can start building IoT solutions and scale them easily with their evolving busi- nesses, especially leveraging the ubiquity of modern Web technologies.</p>
+<p>Given an open source reference implementation of the Platform-Essentials plane and corresponding side cars, a manufacturing company can spin up an entire software eco- system and deploy basic applications on it, even when staff capacity is limited. The use case implementation section details a scenario where a manufacturer managed to bring their new application into production in a faster and safer manner.</p>
+</div>
+<div class="section" id="shopfloor-roles-supported-by-scaleit">
+<h2>Shopfloor Roles Supported by ScaleIT<a class="headerlink" href="#shopfloor-roles-supported-by-scaleit" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Viewing from the manufacturing perspective, there are several key roles held by the actors within an Industrial IoT system. Each of these actors is working with different levels of domain abstraction:</p>
+<dl class="docutils">
+<dt>Workers</dt>
+<dd>Despite a high automation degree, workers are central to the execution of shop floor processes. They need to receive information about the relevant states of the system and use apps as aid in their tasks.</dd>
+<dt>Process manager</dt>
+<dd>The design and controlling of shop floor processes lies in the responsibility of the process manager. This actor will usually search for productivity improvements while ensuring that the quality standards are met. By working data driven, the process manager is on the lookout for new applications that can bring benefits to the manufacturing process (dashboards, worker information applications).</dd>
+<dt>Shop floor IT Engineers</dt>
+<dd>Employees with software engineering experience, usually in small teams, are tasked with keeping the automation technology or the machine software running. They use their limited capacity to bring innovation through domain specific software onto the shop floor (usually triggered by the process manager).</dd>
+<dt>Company IT</dt>
+<dd>The Company IT is responsible for the security and reliability of the company networks and company wide software distributions (Office suite, CAX engineering software). In contrast to the other actors, the company IT very seldomly comes into contact with shop floor applications.</dd>
+<dt>Independent vendors</dt>
+<dd>Vendors are 3rd party software distributors and software component providers across all actors. Companies usually incorporate 3rd party software for the entire automation pyramid. However, most of the time, system integration is done manually in an ad-hoc manner by employees.</dd>
+</dl>
+<p>The above roles are a generalisation and the responsibilities may be be split between several persons. However, these roles are central to the continuous functioning and evolution of the shop floor.</p>
+</div>
+<div class="section" id="app-anatomy">
+<h2>App Anatomy<a class="headerlink" href="#app-anatomy" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="figure" id="id3">
+<a class="reference internal image-reference" href="_images/architektur_app_anatomie1.png"><img alt="App Anatomie" src="_images/architektur_app_anatomie1.png" style="width: 877.0px; height: 514.5px;" /></a>
+<p class="caption"><span class="caption-text">Die Umgebung einer App ist der Shop Floor und sie haust in der ScaleIT Distributed Edge Cloud.</span></p>
+</div>
+<div class="figure" id="id4">
+<a class="reference internal image-reference" href="_images/architektur_app_anatomie2.png"><img alt="App Anatomie" src="_images/architektur_app_anatomie2.png" style="width: 1009.0px; height: 404.0px;" /></a>
+<p class="caption"><span class="caption-text">Eine ScaleIT-App besteht aus der Nutz-Software, die einer direkten Werstschöpfung dient, sowie der Plattformkomponenten die über das Sidecar-Pattern eingebunden werden.</span></p>
+</div>
+<div class="figure" id="id5">
+<a class="reference internal image-reference" href="_images/architektur_app_anatomie3.png"><img alt="App Anatomie" src="_images/architektur_app_anatomie3.png" style="width: 686.0px; height: 431.0px;" /></a>
+<p class="caption"><span class="caption-text">Nach dem Prinzip des 1-Prozess/Container, wird die Software innerhalb eine ScaleIT App in mehrere unterschiedliche Container verpackt, die gemeinsam die gesamtfunktionalität abdecken.</span></p>
+</div>
+<div class="section" id="sidecar-pattern">
+<h3>Sidecar Pattern<a class="headerlink" href="#sidecar-pattern" title="Link zu dieser Überschrift">¶</a></h3>
+<div class="figure" id="id6">
+<a class="reference internal image-reference" href="_images/architektur_sidecar_pattern.png"><img alt="Sidecar pattern" src="_images/architektur_sidecar_pattern.png" style="width: 767.5px; height: 447.0px;" /></a>
+<p class="caption"><span class="caption-text">Durch das Sidecar-Pattern werden Plattformfunktionalitäten hinzugefügt.</span></p>
+</div>
+<div class="figure" id="id7">
+<a class="reference internal image-reference" href="_images/architektur_sidecar_pattern.png"><img alt="ScaleIT value proposition in one glance" src="_images/architektur_sidecar_pattern.png" style="width: 767.5px; height: 447.0px;" /></a>
+<p class="caption"><span class="caption-text">Caption Text</span></p>
+</div>
+<div class="figure" id="id8">
+<a class="reference internal image-reference" href="_images/architektur_sidecar_pattern_saap.png"><img alt="ScaleIT value proposition in one glance" src="_images/architektur_sidecar_pattern_saap.png" style="width: 859.5px; height: 432.0px;" /></a>
+<p class="caption"><span class="caption-text">Caption Text</span></p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="app_readiness.html" class="btn btn-neutral float-right" title="Industry 4.0 App Readiness" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="appdesign.html" class="btn btn-neutral" title="ScaleIT App Design-Prinzipien" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Andrei Miclaus.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

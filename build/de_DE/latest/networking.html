@@ -1,0 +1,527 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Networking &mdash; ScaleIT Platform Documentation 1.0.0 Dokumentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Stichwortverzeichnis"
+              href="genindex.html"/>
+        <link rel="search" title="Suche" href="search.html"/>
+    <link rel="top" title="ScaleIT Platform Documentation 1.0.0 Dokumentation" href="index.html"/>
+        <link rel="next" title="Kommunikation auf der ScaleIT Plattform" href="communication.html"/>
+        <link rel="prev" title="Industry 4.0 App Readiness" href="app_readiness.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ScaleIT Platform Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="whatis.html">What is ScaleIT?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proposition.html">Value Proposition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scalability.html">Skalierung innerhalb ScaleIT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="success_stories.html">ScaleIT Success Stories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appdesign.html">ScaleIT App Design-Prinzipien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">ScaleIT Architektur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_readiness.html">Industry 4.0 App Readiness</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Networking</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#port-vergabe">Port-Vergabe</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#network-ports-fur-apps">Network Ports für Apps</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#funktionen-der-plattform-essentials-zentrale-services">Funktionen der Plattform Essentials (Zentrale Services)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#app-registry">App Registry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fragen-zu-den-anforderungen-and-das-networking-in-scaleit">Fragen zu den Anforderungen and das Networking in ScaleIT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scaleit-app-networking">ScaleIT App Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#http-request-headers">HTTP Request Headers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="communication.html">Kommunikation auf der ScaleIT Plattform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lifecycles.html">ScaleIT Lifecycle Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">Sicherheit (Security) auf der ScaleIT Plattform</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ScaleIT Platform Documentation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Networking</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/networking.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="networking">
+<h1>Networking<a class="headerlink" href="#networking" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="section" id="port-vergabe">
+<h2>Port-Vergabe<a class="headerlink" href="#port-vergabe" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="network-ports-fur-apps">
+<h3>Network Ports für Apps<a class="headerlink" href="#network-ports-fur-apps" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Als Konvention werden Ports innerhalb der Plattform zwischen den dynamischen Ports 49,152 und 65,535 vergeben.</p>
+<ul class="simple">
+<li>Port range 49500 through 49599 for platform components</li>
+<li>Port range 49600 through 49699 for business essentials components</li>
+<li>Port range 49700 and above for apps</li>
+</ul>
+<p>Port ranges are assigned for companies, e.g. 49700-49900 for Ondics Apps</p>
+<p>Tabelle der Port-Konventionen in ScaleIT:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="5%" />
+<col width="11%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Port</th>
+<th class="head" colspan="2">Komponente</th>
+<th class="head">Organisation</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>80</td>
+<td colspan="2">ScaleIT Proxy</td>
+<td>ScaleIT-Org</td>
+</tr>
+<tr class="row-odd"><td colspan="2">49500-50000</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line"><strong>ScaleIT-Org</strong></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>49500</td>
+<td colspan="3">Rancher Server</td>
+</tr>
+<tr class="row-odd"><td>49501</td>
+<td colspan="3">App Registry</td>
+</tr>
+<tr class="row-even"><td>49502</td>
+<td colspan="3">Identity Management</td>
+</tr>
+<tr class="row-odd"><td>49503</td>
+<td colspan="3">MQTT Broker</td>
+</tr>
+<tr class="row-even"><td colspan="4">ScaleIT Entwicklungs-Partner</td>
+</tr>
+<tr class="row-odd"><td colspan="2">50000-50500</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">ATOS</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2">50500-51000</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">Fraunhofer</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2">51000-51500</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">KIT</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2">51500-52000</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">ondics</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2">52000-52500</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">SICK</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2">53000-53500</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">SmartHMI</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2">54000-54500</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">ZEISS</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td colspan="4">ScaleIT Anwendungs-Partner</td>
+</tr>
+<tr class="row-odd"><td colspan="2">54500-54600</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">digiraster</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2">54600-54700</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">Feinmetall</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2">54700-54800</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">microTEC Südwest</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2">54800-54900</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">Rood Microtec</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2">59000-55000</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">Universität Stuttgart</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td colspan="4">Externe Partner</td>
+</tr>
+<tr class="row-odd"><td colspan="2">55000-55100</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">ITstrategen</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2">55100-55200</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">YUMA technologies</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2">55200-55300</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">Ingenieurbüro Teichgräber</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2">55300-55400</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">HS Esslingen</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2">55400-65536</td>
+<td colspan="2"><div class="first last line-block">
+<div class="line">Frei</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="funktionen-der-plattform-essentials-zentrale-services">
+<h2>Funktionen der Plattform Essentials (Zentrale Services)<a class="headerlink" href="#funktionen-der-plattform-essentials-zentrale-services" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="app-registry">
+<h3>App Registry<a class="headerlink" href="#app-registry" title="Link zu dieser Überschrift">¶</a></h3>
+<p>In der Referenzplattform durch ETCD implementiert.</p>
+<ul class="simple">
+<li>kann von jeder app als key-value store genutzt werden</li>
+<li>der top-node muss der fqdn-name der app sein (z.b.</li>
+</ul>
+<blockquote>
+<div>/pacman_1.host_1.scaleit)</div></blockquote>
+<p>weitere regeln dazu:
+- jede app sollte nur die einträge der eigenen app lesen
+- die zentralen apps haben spezielle root-nodes, z.b.</p>
+<blockquote>
+<div>/apphub</div></blockquote>
+<ul class="simple">
+<li>wenn eine app gelöscht wird kann der node gelöscht werden</li>
+</ul>
+<blockquote>
+<div>(z.b. von einem registry-cleaner-prozess)</div></blockquote>
+<ul class="simple">
+<li>die apps dürfen den etcd nicht als massendatenspeicher</li>
+</ul>
+<blockquote>
+<div>nutzen</div></blockquote>
+<ul class="simple">
+<li>systemweite einstellungen finden sich unter /scaleit,</li>
+</ul>
+<blockquote>
+<div>z.b. /scaleit/language oder /scaleit/brand/company-name…
+alle apps solten das berücksichtigen</div></blockquote>
+</div>
+</div>
+<div class="section" id="fragen-zu-den-anforderungen-and-das-networking-in-scaleit">
+<h2>Fragen zu den Anforderungen and das Networking in ScaleIT<a class="headerlink" href="#fragen-zu-den-anforderungen-and-das-networking-in-scaleit" title="Link zu dieser Überschrift">¶</a></h2>
+<ul class="simple">
+<li>Der Zugang nach außen soll möglich sein (z.B. „ping google.de“)</li>
+<li><dl class="first docutils">
+<dt>Wie werden zentrale Services aus einem Container angesprochen?</dt>
+<dd><ul class="first last">
+<li>Ideal wäre sowas wie „ping apphub.coreservice.scaleit“?</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Wie werden andere Container angesprochen? Achtung: Apps können mehrfach instantiiert werden oder auf verschiedenen Hosts laufen!</dt>
+<dd><ul class="first last">
+<li>Ideal wäre „ping pacman_1.host_1.scaleit“</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Wie können Services von außen angesprochen werden?</dt>
+<dd><ul class="first last">
+<li>Hierzu sollte im Firmennetz <a href="#id1"><span class="problematic" id="id2">*</span></a>.scaleit.company.com an die ScaleIT-Plattform weitergeleitet werden</li>
+<li>Der DNS-Name pacman_1.host_1.scaleit.company.com würde dann zur App führen</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="docutils">
+<dt>Was muss in den docker-compose stehen?</dt>
+<dd>Springe zu <a class="reference internal" href="#docker-compose-network-configuration">Docker Compose network configuration</a></dd>
+<dt>Was muss auf Docker-Ebene passieren (sollen wir ein eigenes Docker-Netzwerk definieren?)</dt>
+<dd>Ja, auf Docker (Container) Ebene wird es mehrere Netzwerke geben. Siehe <a class="reference internal" href="#scaleit-app-networking">ScaleIT App Networking</a></dd>
+</dl>
+<p>Docker Compose hier!</p>
+</div>
+<div class="section" id="scaleit-app-networking">
+<span id="id3"></span><h2>ScaleIT App Networking<a class="headerlink" href="#scaleit-app-networking" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Ein logischer Server mit zentralen Diensten, die nur einmalig im System vorkommen können:</p>
+<ul class="simple">
+<li>Rancher</li>
+<li>App-Hub</li>
+<li>Licence Manager</li>
+<li>Yellow Pages (ETCD)</li>
+<li>LDAP / OAuth-Server</li>
+</ul>
+<p>Ein oder mehrere Hosts, auf dem Apps laufen.</p>
+<p>Diagrams inspired by <a class="reference external" href="https://github.com/1backend/1backend/blob/master/docs/services.md">_1Backend</a></p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>            Internet                                            Firmen-Intranet
+/------------------------------\ /--------------------------------------------------------------------------------------\
+                                                                ScaleIT-Netz
+                                                              /---------------------------------------------------------\
+
+
+           client request                  client request                               client request
+           to service A                    to service A                                 to service A
+(        ) -----------------&gt; |----------| -----------------&gt; |-----------------------| -----------------&gt; |------------|
+( client )                    | Firewall |                    | ScaleIT Reverse Proxy |                    |    Apps    |
+(        ) &lt;----------------- |----------| &lt;----------------- |-----------------------| &lt;----------------- |------------|
+           service A response              service A response                           service A response
+           to client                       to client                                    to client
+                                                              ^
+                                                              |
+                                                              |---- place of instrumentation and other magic
+</pre></div>
+</div>
+</div>
+<div class="section" id="http-request-headers">
+<h2>HTTP Request Headers<a class="headerlink" href="#http-request-headers" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Copy from Github repo</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="communication.html" class="btn btn-neutral float-right" title="Kommunikation auf der ScaleIT Plattform" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="app_readiness.html" class="btn btn-neutral" title="Industry 4.0 App Readiness" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Andrei Miclaus.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

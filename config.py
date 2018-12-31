@@ -20,7 +20,7 @@ gettext_compact = False
 setup_original = setup  # from 'sphinx/doc/conf.py'
 
 def setup(app):
-    app.srcdir = os.path.join(BASEDIR, 'docs/source')
+    app.srcdir = os.path.join(BASEDIR, 'docs/source/')
     app.confdir = app.srcdir
 
     setup_original(app)
